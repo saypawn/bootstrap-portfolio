@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 100px;
+    font-family: Arial, Helvetica, sans-serif;   
+    color: #777;
+    background-image: url(../images/interlaced.png);
+}
+
+.header-wrap {
+    background: #fff;
+    border-bottom: 1px solid #ccc; 
+}
+.name-wrap {
+    display: inline-block;
+    margin: 20px 0 0;
+    padding: 20px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    background: #4aaaa5;
+}
+.nav {
+    float: right;
+}
+.nav ul {
+    list-style: none;
+    padding: 20px 0;
+}
+.nav li {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+.nav a {
+    color: #a3a3a3;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #ccc;
+}
+.content {
+    margin: 10px 0; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.content img {
+    float: left;
+    margin: 0 20px 30px 0;
+}
+.content p {
+    line-height: 24px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    border-top: 5px solid #4aaaa5;
+    background: #666;
+    text-align: center;
+}
+.footer p {
+    margin: 0 auto;
+    color: #aaa;
+}
